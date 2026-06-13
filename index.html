@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CYBER PINKS</title>
+  <title>CYBER PINKS — VS Code UI</title>
+  <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-  <h1>CYBER PINKS</h1>
-  <p>Welcome to the official site.</p>
+  <div class="vscode-root Exo-2-400">
+
+<!-- Activity Bar -->
+<div class="activity-bar">
+  <div class="activity-icon active">
+    <img src="icons/folder.svg" alt="Explorer">
+  </div>
+  <div class="activity-icon">
+    <img src="icons/search.svg" alt="Search">
+  </div>
+  <div class="activity-icon">
+    <img src="icons/branch.svg" alt="Source Control">
+  </div>
+  <div class="activity-icon">
+    <img src="icons/settings.svg" alt="Settings">
+  </div>
+</div>
+
+    <!-- Side Bar -->
+    <div class="side-bar">
+      <div class="side-title">EXPLORER</div>
+      <div class="side-item active">CYBER PINKS</div>
+      <div class="side-item">src</div>
+      <div class="side-item">themes</div>
+      <div class="side-item">assets</div>
+    </div>
+
+    <!-- Main Area -->
+    <div class="main-area">
+
+      <!-- Title Bar -->
+      <div class="title-bar">
+        <div class="title-left">CYBER PINKS — Visual Studio Code</div>
+        <div class="title-right">
+          <span>−</span><span>□</span><span>×</span>
+        </div>
+      </div>
+
+      <!-- Tab Bar -->
+      <div class="tab-bar">
+        <div class="tab active">
+          <span class="tab-icon">{} </span>
+          <span class="tab-label">index.html</span>
+          <span class="tab-close">×</span>
+        </div>
+        <div class="tab">
+          <span class="tab-icon">{} </span>
+          <span class="tab-label">theme.json</span>
+          <span class="tab-close">×</span>
+        </div>
+      </div>
+
+      <!-- Editor Placeholder -->
+      <div class="editor-layout">
+        <div class="breadcrumbs">
+          <span>CYBER PINKS</span>
+          <span>/</span>
+          <span>index.html</span>
+        </div>
+
+        <div class="editor-surface">
+          <!-- UI only, no Monaco -->
+          <pre class="dummy-code">
+&lt;!-- CYBER PINKS VS Code UI (UI only) --&gt;
+
+&lt;h1&gt;Hello, CYBER PINKS!&lt;/h1&gt;
+
+&lt;p&gt;This is a static VS Code UI built with HTML and CSS.&lt;/p&gt;
+
+          </pre>
+        </div>
+      </div>
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div class="status-left">
+          <span>CYBER PINKS</span>
+          <span>● main</span>
+        </div>
+        <div class="status-right">
+          <span>UTF-8</span>
+          <span>LF</span>
+          <span>Spaces: 2</span>
+          <span>HTML</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
