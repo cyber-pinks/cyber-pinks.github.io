@@ -1,133 +1,167 @@
+/* ================================
+   RESET
+================================ */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  height: 100vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #111018;
-  color: #ddd;}
+a{color: cyan;}
+a:hover {
+  color: #fed4d4;
+}
+a:before{
+color: #D92882;
 
-
-.exo-2-400 {
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 
+:root {
+  --pink: #ff00ff;
+  --cyan: #00ffff;
+  --accent-pink: #ff3399;
+}
+
+
 .vscode-root {
+  grid-template-columns: 48px 260px 1fr;
+
+}
+
+
+
+
+.vscode-root {
+  border: 2px solid #ff3399;
+  border-radius: 0px;
+  padding: 0px;
+  background: linear-gradient(315deg, var(--pink), var(--cyan));
+  background-clip: padding-box, border-box;
+
+
+
   display: grid;
   grid-template-columns: 48px 260px 1fr;
-  grid-template-rows: 32px 1fr 22px;
-  height: 100vh;
+
   overflow: hidden;
 }
 
-/* Activity Bar */
+/* ================================
+   BODY
+================================ */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #111018;
+  color: #ddd;
+  font-size: 1.2rem;
+}
 
+.Exo-2-400 {
+  font-family: "Exo 2", sans-serif;
+}
+
+/* ================================
+   ACTIVITY BAR
+================================ */
 .activity-bar {
   grid-row: 1 / 4;
-  background: #000000;
+  background: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 8px;
   gap: 8px;
+  border-bottom: 1px solid #ff3399;
 }
 
 .activity-icon {
   width: 32px;
   height: 32px;
   border-radius: 6px;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #888;
   cursor: pointer;
-  font-size: 14px;
 }
 
 .activity-icon img {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   opacity: 0.9;
-  filter: none;
 }
 
-.activity-icon.active {
-  color: #FF3399;
-}
-
-.activity-icon.active img {
-  opacity: 1;
-}
-
+.activity-icon.active img,
 .activity-icon:hover img {
   opacity: 1;
 }
 
-/* Side Bar */
-
+/* ================================
+   SIDE BAR
+================================ */
 .side-bar {
   grid-column: 2 / 3;
-  grid-row: 2 / 4;
+  grid-row: 1 / 5;
   background: #0d0e17;
-  border-right: 1px solid #2a2a30;
-  display: flex;
-  flex-direction: column;
   padding: 8px;
-  font-size: 12px;
+  font-size: 2rem;
+border: 1px solid #D92882;
 }
 
 .side-title {
-  color: #FF3399;
-  font-weight: 600;
+  color: var(--accent-pink);
+  font-weight: 200;
   margin-bottom: 8px;
+  border-bottom: 1px solid var(--accent-pink);
 }
 
 .side-item {
   padding: 4px 6px;
   border-radius: 4px;
   cursor: pointer;
-  color: #FF3399;
+  color: var(--accent-pink);
 }
 
 .side-item.active {
-  background: #25252b;
+  background: #111320;
   color: #fff;
 }
 
-/* Main Area */
-
+/* ================================
+   MAIN AREA
+================================ */
 .main-area {
   grid-column: 3 / 4;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
   display: grid;
   grid-template-rows: 32px 32px 1fr 22px;
   background: #1e1e24;
+
 }
 
-/* Title Bar */
-
+/* ================================
+   TITLE BAR
+================================ */
 .title-bar {
   grid-row: 1 / 2;
-  background: #000000;
+  background: #000;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
-  padding: 0 8px;
-  font-size: 12px;
-  color: #ccc;
+  padding: 2px 8px;
+  font-size: 1rem;
+  Margin:0px;
+  color: #ff3399;  border: #ff3399 0px solid;
 }
 
-/* Tab Bar */
-
+/* ================================
+   TAB BAR
+================================ */
 .tab-bar {
   grid-row: 2 / 3;
-  background: #25252b;
+  background: #0d0e17;
   display: flex;
   align-items: flex-end;
   padding-left: 4px;
@@ -136,96 +170,138 @@ body {
 .tab {
   display: flex;
   align-items: center;
-  padding: 6px 10px 4px;
+  padding: 0px 10px 4px;
   margin-right: 2px;
   border-radius: 4px 4px 0 0;
-  background: #2d2d34;
-  color: #FF3399;
-  font-size: 12px;
+  background: #25252b;
+  color: var(--accent-pink);
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .tab.active {
-  background: #2d2d34;
-  color: #FF3399;
+  background: #111320;
+  color: var(--accent-pink);
 }
 
-.tab-icon {
-  margin-right: 4px;
-  font-size: 11px;
-}
-
-.tab-close {
-  margin-left: 6px;
-  font-size: 11px;
-  color: #FF3399;
-  opacity: 1;
-}
-
-/* Editor Layout */
-
+/* ================================
+   EDITOR
+================================ */
 .editor-layout {
   grid-row: 3 / 4;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #2a2a30;
+  background: #111320;
 }
 
 .breadcrumbs {
-  height: 24px;
+  height: 2rem;
   display: flex;
   align-items: center;
   gap: 4px;
   padding: 0 12px;
-  font-size: 11px;
-  color: #999;
-  background: #1a1a20;
-  border-bottom: 1px solid #25252b;
+  font-size: 1rem;
+  color: #ccc;
+  background: #111320;
 }
 
 .editor-surface {
   flex: 1;
-  background: #000000;
-  padding: 16px;
+  background: #000;
+  padding: 1rem;
   overflow: auto;
 }
 
 .dummy-code {
-  color: #FF3399;
-  font-family: "Consolas", "Courier New", monospace;
-  font-size: 24px;
-  white-space: pre;
+  color: var(--accent-pink);
+    font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
+white-space: pre-wrap;
 }
 
-/* Status Bar */
+.dummy-code a {color: #D92882;
+text-underline-offset: 1rem;
+}
 
+.dummy-code a:hover {
+  color: #edcaca; 
+}
+
+
+/* ================================
+   STATUS BAR
+================================ */
 .status-bar {
   grid-row: 4 / 5;
-  background: #000000;
+  background: #000;
   display: flex;
+      position: fixed;
+    bottom: 0;
+      min-width: -webkit-fill-available;
+
   align-items: center;
   justify-content: space-between;
   padding: 0 8px;
-  font-size: 11px;
-  color: #ff3399;
+  font-size: 14px;
+  color: var(--accent-pink);
+  border: 1px solid #D92882;
+
+
+
 }
 
 .status-left span,
 .status-right span {
   margin-right: 8px;
-  color:#FF3399;
 }
 
-.panel{
-   background: #0d0e17;}
-  
-.breadcrumbs {
-  background: #111320;
+/* ================================
+   README NEON CARD
+================================ */
+ .neon-readme-container{
+padding: 10px;
+
+} 
+
+
+.neon-readme-container h1, .neon-readme-container h2{
+padding: 0.5rem 1rem 1rem;
+color: #ffffff;
 }
 
+.neon-readme-content {
 
-.widget,
-.menu,
-.input {
-  background: #111320;
+   margin: 5rem;
+  padding: 1rem 4rem;
+ 
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2rem var(--pink), -1rem -1rem 2rem var(--cyan);
+}   
+
+.neon-readme-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.neon-readme-content h1,
+.neon-readme-content h2,
+.neon-readme-content h3 {
+  color: var(--accent-pink);
+
+
+  margin-top: 10px;
+}
+
+.neon-readme-content a {
+  color: var(--cyan);
+  text-shadow: 0 0 5px var(--cyan);
+}
+
+.neon-readme-content a:hover {
+  color: var(--accent-pink);
+  text-shadow: 0 0 10px var(--pink);
 }
