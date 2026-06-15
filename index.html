@@ -1,37 +1,56 @@
-<!DOCTYPE html>
+<!-- // Copyright (c) 2026 1abcdefggs (takaer)
+// Licensed under the MIT License
+// See LICENSE file in the project root for full license information
+-->
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>CYBER PINKS — VS Code UI</title>
   <link rel="stylesheet" href="style.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&Fira+Code:wght@300&display=swap" rel="stylesheet">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <!-- Title Bar -->
+      <div class="title-bar neon-border">
+        <div class="title-left">CYBER PINKS — Visual Studio Code</div>
+        <div class="title-right">
+          <span>−</span><span>□</span><span>×</span>
+        </div>
+      </div>
+
   <div class="vscode-root Exo-2-400">
 
-<!-- Activity Bar -->
-<div class="activity-bar">
-  <div class="activity-icon active">
-    <img src="icons/folder.svg" alt="Explorer">
-  </div>
-  <div class="activity-icon">
-    <img src="icons/search.svg" alt="Search">
-  </div>
-  <div class="activity-icon">
-    <img src="icons/branch.svg" alt="Source Control">
-  </div>
-  <div class="activity-icon">
-    <img src="icons/settings.svg" alt="Settings">
-  </div>
-</div>
+ 
+
+
+    <!-- Activity Bar -->
+    <div class="activity-bar neon-border">
+      <div class="activity-icon active">
+        <img src="icons/folder.svg" alt="Explorer">
+      </div>
+      <div class="activity-icon">
+        <img src="icons/search.svg" alt="Search">
+      </div>
+      <div class="activity-icon">
+        <img src="icons/branch.svg" alt="Source Control">
+      </div>
+      <div class="activity-icon">
+        <img src="icons/settings.svg" alt="Settings">
+      </div>
+    </div>
 
     <!-- Side Bar -->
-    <div class="side-bar">
+    <div class="side-bar neon-border">
       <div class="side-title">EXPLORER</div>
       <div class="side-item active">CYBER PINKS</div>
       <div class="side-item">src</div>
@@ -42,16 +61,10 @@
     <!-- Main Area -->
     <div class="main-area">
 
-      <!-- Title Bar -->
-      <div class="title-bar">
-        <div class="title-left">CYBER PINKS — Visual Studio Code</div>
-        <div class="title-right">
-          <span>−</span><span>□</span><span>×</span>
-        </div>
-      </div>
+ 
 
       <!-- Tab Bar -->
-      <div class="tab-bar">
+      <div class="tab-bar neon-border">
         <div class="tab active">
           <span class="tab-icon">{} </span>
           <span class="tab-label">index.html</span>
@@ -72,21 +85,22 @@
           <span>index.html</span>
         </div>
 
-        <div class="editor-surface">
-          <!-- UI only, no Monaco -->
-          <pre class="dummy-code">
+<div class="editor-surface neon-border neon-inset">
+
+<pre class="dummy-code">
 &lt;!-- CYBER PINKS VS Code UI (UI only) --&gt;
 
 &lt;h1&gt;Hello, CYBER PINKS!&lt;/h1&gt;
 
 &lt;p&gt;This is a static VS Code UI built with HTML and CSS.&lt;/p&gt;
 
-          </pre>
-        </div>
-      </div>
+<a href="https://github.com/cyber-pinks/cyber-pink-theme">
+&lt;a href="https://github.com/cyber-pinks/cyber-pink-theme"&gt;Cyber Pink Theme&lt;/a&gt;</a>
 
+</pre>
+</div>
       <!-- Status Bar -->
-      <div class="status-bar">
+      <div class="status-bar neon-border">
         <div class="status-left">
           <span>CYBER PINKS</span>
           <span>● main</span>
@@ -99,7 +113,186 @@
         </div>
       </div>
 
+
+        <div class="neon-readme-container">
+            <h2>Repository: <a href="https://github.com/cyber-pinks/cyber-pink-theme">Cyber Pink Theme</a></h2>
+                    <div class="neon-readme-content">
+              <a href="https://marketplace.visualstudio.com/items?itemName=cyber-pinks.cyber-pink-theme">
+                <img src="https://img.shields.io/visual-studio-marketplace/v/cyber-pinks.cyber-pink-theme.svg" alt="VS Code Marketplace">
+              </a>
+
+              <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.png" alt="License: MIT"></a>
+
+              <a href="https://github.com/cyber-pinks/cyber-pink-theme/releases"><img src="https://img.shields.io/github/v/release/cyber-pinks/cyber-pink-theme" alt="Release">
+              </a>
+
+              <a href="https://github.com/cyber-pinks/cyber-pink-theme/commits"><img src="https://img.shields.io/github/last-commit/cyber-pinks/cyber-pink-theme" alt="GitHub last commit">
+              </a>
+            <br>
+
+            <p>  For users who always use dark mode😎.<br>
+A vibrant VS Code color theme inspired by cyberpunk, 
+            <br>
+available in two primary colors: Neon Pink & Cyan.<br>
+However, it is not suitable for people who easily experience eye strain from high contrast. <p>
+
+            <br>
+            <figure><figcaption>PINK NEON</figcaption><img src="images/screenshots/pink-neon-theme-p1.webp"alt= "Pink Neon"></figure>
+            <br>
+
+
+
+                   <p>A vibrant VS Code color theme inspired by futuristic cyberpunk.</p><br>
+                   <p>💡 How to build a futuristic world: Dim the lights and immerse yourself in programmed sounds ♪</p>
+
+</div>
+</div>
+
+
+
+<div class="neon-readme-container">
+         <h2>Variation</h2>
+  
+
+
+        <div class="neon-readme-content">
+          Colors: Pink, Cyan | Intensity: Neon, Soft
+           <strong><h3 style="color: #ff3399;">PINK</h3></strong><br>
+            <!-- Neon -->
+            <div style="display:flex;justify-content:space-around; max-width: 100%; padding: 1rem;">
+
+                <figure><figcaption style="color: #ff3399;">PINK NEON</figcaption>
+                  <img src="images/screenshots/pink-neon-theme-p1.webp"
+                                    style="max-width: 100%; height: auto; padding:0.1rem;"
+                                    alt="Pink Neon"></figure>
+                <figure><figcaption style="color: #d92882;">PINK SOFT</figcaption>
+                <img src="images/screenshots/pink-soft-theme-p1.webp"
+                                    style="max-width: 100%; height: auto; padding: 0.1rem;"
+                                    alt="Pink Soft"></figure>
+
+                    </div>
+<br><br>
+                <figure><figcaption style="color: #ff3399;">PINK NEON</figcaption>
+                  <img src="images/screenshots/pink-neon-theme-p2.webp"
+                                    style="max-width: 100%; height: auto; padding:0.1rem;"
+                                    alt="Pink Neon"></figure>
+<br><br>
+                                                   <figure><figcaption style="color: #d92882;">PINK SOFT</figcaption>
+                <img src="images/screenshots/pink-soft-theme-p2.webp"
+                                    style="max-width: 100%; height: auto; padding: 0.1rem;"
+                                    alt="Pink Soft"></figure>
+
+
+
+
+<br><br>
+                  </div>
+
+
+
+
+
+
+     <div class="neon-readme-content">
+            <!-- Neon -->
+                   <strong><h3 style="color: aqua;">CYAN</h3></strong><br>
+            <div style="display:flex;justify-content:space-around; max-width: 100%;">
+
+                        <figure>  <figcaption style="color: aqua;">CYAN NEON</figcaption>
+                                        <img src="images/screenshots/cyan-neon-theme-p1.webp"
+                                            style="max-width: 100%; height: auto;" padding:0.1rem;
+                                            alt="Cyan Neon">
+
+
+                        </figure><br><br>
+                        <figure>  <figcaption style="color: #00ccD9;">CYAN SOFT</figcaption>
+
+                                        <img src="images/screenshots/cyan-soft-theme-p1.webp"
+                                            style="max-width: 100%; height: auto; padding:0.1rem;"
+                                            alt="Cyan Soft">
+                        </figure>
+
+
+
+  
+<br><br>
+
+
+
+            </div>
+          
+          <br><br>
+          
+                               <figure>  <figcaption style="color: aqua;">CYAN NEON</figcaption>
+                                        <img src="images/screenshots/cyan-neon-theme-p2.webp"
+                                            style="max-width: 100%; height: auto;" padding:0.1rem;
+                                            alt="Cyan Neon">
+
+<br><br>
+                        </figure>
+                        <figure>  <figcaption style="color: #00ccD9;">CYAN SOFT</figcaption>
+
+                                        <img src="images/screenshots/cyan-soft-theme-p2.webp"
+                                            style="max-width: 100%; height: auto; padding:0.1rem;"
+                                            alt="Cyan Soft">
+                        </figure>
+          
+          
+          
+          <br><br>
+          
+          
+          </div>
+
+
+
+
+
+                  </div>
+
+
+
+
+
+
+
+<div class="neon-readme-container">
+         <h2>Repository &amp; Issues</h2>
+        <div class="neon-readme-content">
+            <p>Repository: <a href="https://github.com/cyber-pinks/cyber-pink-theme">https://github.com/cyber-pinks/cyber-pink-theme</a></p>
+
+            <p>Report issues or request features via <a href="https://github.com/cyber-pinks/cyber-pink-theme/issues">Issues</a> on GitHub.</p>
+
+            <h2>License Copyright</h2>
+
+   <strong>Publisher:</strong> <a href="https://github.com/CYBER-PINKS/">CYBER-PINKS</a>
+
+            <p>This project is Licensed under the MIT License <a href="./LICENSE">MIT LICENSE</a>.</p>
+
+            <p>Copyright (c) 2026 <a href="https://github.com/1abcdefggs">1abcdefggs</a></p>
+
+
+        </div>
+      </div>
+
+             
+      </div>
+
     </div>
   </div>
+
+      <!-- Status Bar -->
+      <div class="status-bar neon-border">
+        <div class="status-left">
+          <span>CYBER PINKS</span>
+          <span>● main</span>
+        </div>
+        <div class="status-right">
+          <span>UTF-8</span>
+          <span>LF</span>
+          <span>Spaces: 2</span>
+          <span>HTML</span>
+        </div>
+      </div>
 </body>
 </html>
